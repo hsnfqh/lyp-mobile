@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    tools:context=".BelanjaObatActivity"
+    android:padding="16dp">
+
+    <!-- Section Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="#00000000"
+            android:scaleType="centerCrop"
+            android:src="@drawable/back" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/imageProfil"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="#00000000"
+            android:scaleType="centerCrop"
+            android:src="@drawable/shop" />
+    </LinearLayout>
+
+    <!-- Section Title and Subtitle -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:fontFamily="@font/poppins_bold"
+            android:marginTop="8dp"
+            android:text="Obat Hewan"
+            android:textColor="#D91656"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Temukan obat hewan kesayangan anda"
+            android:textColor="#D91656"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins_semibold"
+            android:marginBottom="16dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp" />
+    </LinearLayout>
+
+    <!-- Section Search Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="18dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:cardElevation="12dp"
+            app:cardCornerRadius="8dp"
+            android:layout_margin="8dp">
+
+            <EditText
+                android:id="@+id/search_bar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/search"
+                android:drawableStart="@drawable/search"
+                android:textSize="12sp"
+                android:hint="Cari Produk..."
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:layout_gravity="center_vertical"/>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <!-- Scrollable Section Cards -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <!-- Row 1: Card 1 and Card 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <!-- Card 1 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    android:layout_margin="8dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:src="@drawable/cat_choize"
+                            android:contentDescription="Product Image"
+                            android:padding="8dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cat Coize"
+                            android:textSize="15sp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:layout_marginStart="8dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rp 150,000"
+                            android:textSize="13sp"
+                            android:fontFamily="@font/Poppins_Medium"
+                            android:textColor="#ff5722"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginStart="8dp"/>
+
+                        <Button
+                            android:id="@+id/addToCartBtn2"
+                            android:layout_width="100dp"
+                            android:layout_height="38dp"
+                            android:text="Tambah"
+                            android:textSize="10sp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:layout_marginTop="8dp"
+                            android:layout_gravity="start"
+                            app:backgroundTint="#D91656"
+                            app:cornerRadius="5dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="16dp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Card 2 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    android:layout_margin="8dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:src="@drawable/cat_choize"
+                            android:contentDescription="Product Image"
+                            android:padding="8dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cat Coize"
+                            android:textSize="15sp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:layout_marginStart="8dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rp 150,000"
+                            android:textSize="13sp"
+                            android:fontFamily="@font/Poppins_Medium"
+                            android:textColor="#ff5722"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginStart="8dp"/>
+
+                        <Button
+                            android:id="@+id/addToCartBtn1"
+                            android:layout_width="100dp"
+                            android:layout_height="38dp"
+                            android:text="Tambah"
+                            android:textSize="10sp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:layout_marginTop="8dp"
+                            android:layout_gravity="start"
+                            app:backgroundTint="#D91656"
+                            app:cornerRadius="5dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="16dp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <!-- Row 2: Card 3 and Card 4 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <!-- Card 3 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    android:layout_margin="8dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:src="@drawable/cat_choize"
+                            android:contentDescription="Product Image"
+                            android:padding="8dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cat Coize"
+                            android:textSize="15sp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:layout_marginStart="8dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rp 150,000"
+                            android:textSize="13sp"
+                            android:fontFamily="@font/Poppins_Medium"
+                            android:textColor="#ff5722"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginStart="8dp"/>
+
+                        <Button
+                            android:id="@+id/addToCartBtn5"
+                            android:layout_width="100dp"
+                            android:layout_height="38dp"
+                            android:text="Tambah"
+                            android:textSize="10sp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:layout_marginTop="8dp"
+                            android:layout_gravity="start"
+                            app:backgroundTint="#D91656"
+                            app:cornerRadius="5dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="16dp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Card 4 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    android:layout_margin="8dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:src="@drawable/cat_choize"
+                            android:contentDescription="Product Image"
+                            android:padding="8dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cat Coize"
+                            android:textSize="15sp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:layout_marginStart="8dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rp 150,000"
+                            android:textSize="13sp"
+                            android:fontFamily="@font/Poppins_Medium"
+                            android:textColor="#ff5722"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginStart="8dp"/>
+
+                        <Button
+                            android:id="@+id/addToCartBtn6"
+                            android:layout_width="100dp"
+                            android:layout_height="38dp"
+                            android:text="Tambah"
+                            android:textSize="10sp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:layout_marginTop="8dp"
+                            android:layout_gravity="start"
+                            app:backgroundTint="#D91656"
+                            app:cornerRadius="5dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="16dp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <!-- Row 2: Card 3 and Card 4 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <!-- Card 3 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    android:layout_margin="8dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:src="@drawable/cat_choize"
+                            android:contentDescription="Product Image"
+                            android:padding="8dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cat Coize"
+                            android:textSize="15sp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:layout_marginStart="8dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rp 150,000"
+                            android:textSize="13sp"
+                            android:fontFamily="@font/Poppins_Medium"
+                            android:textColor="#ff5722"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginStart="8dp"/>
+
+                        <Button
+                            android:id="@+id/addToCartBtn14"
+                            android:layout_width="100dp"
+                            android:layout_height="38dp"
+                            android:text="Tambah"
+                            android:textSize="10sp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:layout_marginTop="8dp"
+                            android:layout_gravity="start"
+                            app:backgroundTint="#D91656"
+                            app:cornerRadius="5dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="16dp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Card 4 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    android:layout_margin="8dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:src="@drawable/cat_choize"
+                            android:contentDescription="Product Image"
+                            android:padding="8dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cat Coize"
+                            android:textSize="15sp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:layout_marginStart="8dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rp 150,000"
+                            android:textSize="13sp"
+                            android:fontFamily="@font/Poppins_Medium"
+                            android:textColor="#ff5722"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginStart="8dp"/>
+
+                        <Button
+                            android:id="@+id/addToCartBtn7"
+                            android:layout_width="100dp"
+                            android:layout_height="38dp"
+                            android:text="Tambah"
+                            android:textSize="10sp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:layout_marginTop="8dp"
+                            android:layout_gravity="start"
+                            app:backgroundTint="#D91656"
+                            app:cornerRadius="5dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="16dp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <!-- Row 2: Card 3 and Card 4 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <!-- Card 3 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    android:layout_margin="8dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:src="@drawable/cat_choize"
+                            android:contentDescription="Product Image"
+                            android:padding="8dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cat Coize"
+                            android:textSize="15sp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:layout_marginStart="8dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rp 150,000"
+                            android:textSize="13sp"
+                            android:fontFamily="@font/Poppins_Medium"
+                            android:textColor="#ff5722"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginStart="8dp"/>
+
+                        <Button
+                            android:id="@+id/addToCartBtn9"
+                            android:layout_width="100dp"
+                            android:layout_height="38dp"
+                            android:text="Tambah"
+                            android:textSize="10sp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:layout_marginTop="8dp"
+                            android:layout_gravity="start"
+                            app:backgroundTint="#D91656"
+                            app:cornerRadius="5dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="16dp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Card 4 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    android:layout_margin="8dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:src="@drawable/cat_choize"
+                            android:contentDescription="Product Image"
+                            android:padding="8dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cat Coize"
+                            android:textSize="15sp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:layout_marginStart="8dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rp 150,000"
+                            android:textSize="13sp"
+                            android:fontFamily="@font/Poppins_Medium"
+                            android:textColor="#ff5722"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginStart="8dp"/>
+
+                        <Button
+                            android:id="@+id/addToCartBtn8"
+                            android:layout_width="100dp"
+                            android:layout_height="38dp"
+                            android:text="Tambah"
+                            android:textSize="10sp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:layout_marginTop="8dp"
+                            android:layout_gravity="start"
+                            app:backgroundTint="#D91656"
+                            app:cornerRadius="5dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="16dp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

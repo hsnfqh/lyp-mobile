@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    tools:context=".ListHewanActivity"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Section Header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp">
+
+                <!-- Gambar di Kiri -->
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="#00000000"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/back" />
+
+                <!-- Spacer untuk memisahkan gambar -->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <!-- Gambar di Kanan -->
+                <ImageButton
+                    android:id="@+id/imageProfil"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="#00000000"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pp" />
+            </LinearLayout>
+
+            <!-- Section Title and Subtitle -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:marginTop="8dp"
+                    android:text="Temukan"
+                    android:textColor="#D91656"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Waktu terbaik untuk janji temu hewan Anda"
+                    android:textColor="#D91656"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:marginBottom="16dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp" />
+            </LinearLayout>
+
+            <!-- Section Search Bar -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_margin="8dp">
+
+                    <EditText
+                        android:id="@+id/search_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/search"
+                        android:drawableStart="@drawable/search"
+                        android:textSize="12sp"
+                        android:hint="Cari Daftar Dokter..."
+                        android:paddingStart="14dp"
+                        android:paddingEnd="14dp"
+                        android:layout_gravity="center_vertical"/>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <!-- First Card View -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:gravity="center_vertical">
+
+                    <!-- Product Image -->
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/avatar_merah"
+                        android:contentDescription="Product Image"
+                        android:layout_marginEnd="16dp" />
+
+                    <!-- Product Details -->
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Vaksinasi"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:layout_marginTop="8dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dengan Drs. Ahmad Hasan "
+                            android:textSize="13sp"
+                            android:fontFamily="@font/Poppins_Medium"
+                            android:textColor="#ff5722"
+                            android:layout_marginTop="4dp" />
+
+                        <!-- Edit and Delete Buttons side by side -->
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:gravity="start">
+
+                            <Button
+                                android:id="@+id/deleteBtn1"
+                                android:layout_width="0dp"
+                                android:layout_height="38dp"
+                                android:text="Buat Janji"
+                                android:textSize="10sp"
+                                android:fontFamily="@font/poppins_semibold"
+                                app:backgroundTint="#D91656"
+                                app:cornerRadius="5dp"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Second Card View -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:gravity="center_vertical">
+
+                    <!-- Product Image -->
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/avatar_merah"
+                        android:contentDescription="Product Image"
+                        android:layout_marginEnd="16dp" />
+
+                    <!-- Product Details -->
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pemberian Vitamin"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:layout_marginTop="8dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dengan Drs. Ahmad Hasan "
+                            android:textSize="13sp"
+                            android:fontFamily="@font/Poppins_Medium"
+                            android:textColor="#ff5722"
+                            android:layout_marginTop="4dp" />
+
+                        <!-- Edit and Delete Buttons side by side -->
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:gravity="start">
+
+                            <Button
+                                android:id="@+id/deleteBtn2"
+                                android:layout_width="0dp"
+                                android:layout_height="38dp"
+                                android:text="Buat Janji"
+                                android:textSize="10sp"
+                                android:fontFamily="@font/poppins_semibold"
+                                app:backgroundTint="#D91656"
+                                app:cornerRadius="5dp"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Third Card View -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:gravity="center_vertical">
+
+                    <!-- Product Image -->
+                    <!-- Product Image -->
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/avatar_merah"
+                        android:contentDescription="Product Image"
+                        android:layout_marginEnd="16dp" />
+
+                    <!-- Product Details -->
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Periksa Kesehatan"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:layout_marginTop="8dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dengan Drs. Ahmad Hasan "
+                            android:textSize="13sp"
+                            android:fontFamily="@font/Poppins_Medium"
+                            android:textColor="#ff5722"
+                            android:layout_marginTop="4dp" />
+
+                        <!-- Edit and Delete Buttons side by side -->
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:gravity="start">
+
+                            <Button
+                                android:id="@+id/deleteBtn3"
+                                android:layout_width="0dp"
+                                android:layout_height="38dp"
+                                android:text="Buat Janji"
+                                android:textSize="10sp"
+                                android:fontFamily="@font/poppins_semibold"
+                                app:backgroundTint="#D91656"
+                                app:cornerRadius="5dp"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Add "Tambah Hewan" Button -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="16dp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/lihatsemua"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tambah Hewan"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center"
+                    app:backgroundTint="#D91656"
+                    app:cornerRadius="5dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="16dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+

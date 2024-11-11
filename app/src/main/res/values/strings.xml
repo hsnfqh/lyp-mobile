@@ -1,0 +1,15 @@
+<resources>
+    <!-- Animal Types Array -->
+    <string-array name="animal_types">
+        <item>Kucing</item>
+        <item>Anjing</item>
+        <item>Kelinci</item>
+        <item>Hamster</item>
+    </string-array>
+
+    <!-- Gender Options Array -->
+    <string-array name="gender_options">
+        <item>Jantan</item>
+        <item>Betina</item>
+    </string-array>
+</resources>

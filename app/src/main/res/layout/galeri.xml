@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".GaleriActivity"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Section Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp">
+
+            <!-- Gambar di Kiri -->
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="#00000000"
+                android:scaleType="centerCrop"
+                android:src="@drawable/back" />
+
+            <!-- Spacer untuk memisahkan gambar -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <!-- Gambar di Kanan -->
+            <ImageButton
+                android:id="@+id/imageProfil"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="#00000000"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pp" />
+        </LinearLayout>
+
+        <!-- Section Title and Subtitle -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:fontFamily="@font/poppins_bold"
+                android:marginTop="8dp"
+                android:text="Galeri Hewan"
+                android:textColor="#D91656"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Abadikan  momen berharga hewan peliharaan Anda"
+                android:textColor="#D91656"
+                android:textSize="12sp"
+                android:fontFamily="@font/poppins_semibold"
+                android:marginBottom="16dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp" />
+        </LinearLayout>
+
+        <!-- First Card View -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="580dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="12dp"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:gravity="center"> <!-- Centering both the image and text -->
+
+                <!-- Image View for Animal Image -->
+                <ImageView
+                    android:id="@+id/animalImage"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/kucing"
+                    android:contentDescription="Animal Image"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- TextView below the image -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Liora Erilya | Kucing"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center" /> <!-- Centering the text -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Deskripsi:"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="-2dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mochi, seekor kucing domestik berbulu oranye dengan mata hijau terang. Mochi adalah kucing yang penuh dengan keceriaan dan kehangatan. Dengan bulu yang lembut dan mata yang cerah, Mochi selalu bisa membuat siapa saja merasa nyaman di sekitarnya. Setiap pagi, Mochi akan melompat ke tempat tidur dan duduk di samping pemiliknya, menunggu perhatian dan belaian lembut. Suaranya yang khas, seperti suara dengkuran halus, menjadi musik pagi yang menenangkan. "
+                    android:fontFamily="@font/Poppins_Medium"
+                    android:textColor="#ff5722"
+                    android:layout_marginTop="4dp"
+                    android:letterSpacing="0.02"
+                    android:justificationMode="inter_word" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tanggal: 12/07/2024"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="-2dp"/>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>
