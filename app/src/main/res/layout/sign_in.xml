@@ -28,14 +28,14 @@
                 android:layout_gravity="end"
                 android:layout_marginBottom="-20dp"
                 android:backgroundTint="#E90074"
-                android:src="@drawable/SHAPE"
+                android:src="@drawable/shape"
                 android:layout_marginStart="10dp"/>
 
             <ImageView
                 android:id="@+id/logo2"
                 android:layout_width="600dp"
                 android:layout_height="150dp"
-                android:layout_marginBottom="20dp"
+
                 android:layout_marginTop="-20dp"
                 android:backgroundTint="#E90074"
                 android:src="@drawable/lyp" />
@@ -184,7 +184,7 @@
                 android:text="Not have an account?"
                 android:textColor="#D91656"
                 android:textSize="15sp"
-                android:fontFamily="@font/Poppins_Medium"
+                android:fontFamily="@font/poppins_medium"
                 android:layout_marginBottom="10dp" />
 
             <Button

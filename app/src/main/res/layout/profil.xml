@@ -53,7 +53,7 @@
                 android:layout_marginStart="12dp"
                 android:layout_marginEnd="12dp"
                 android:fontFamily="@font/poppins_bold"
-                android:marginTop="8dp"
+                android:layout_marginTop="8dp"
                 android:text="Profil"
                 android:textColor="#D91656"
                 android:textSize="20sp" />
@@ -66,7 +66,7 @@
                 android:textColor="#D91656"
                 android:textSize="12sp"
                 android:fontFamily="@font/poppins_semibold"
-                android:marginBottom="16dp"
+                android:layout_marginBottom="16dp"
                 android:layout_marginStart="12dp"
                 android:layout_marginEnd="12dp" />
         </LinearLayout>
@@ -101,7 +101,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Ganti Gambar"
-                    android:fontFamily="@font/Poppins_Medium"
+                    android:fontFamily="@font/poppins_medium"
                     android:textSize="12sp"
                     app:cornerRadius="5dp"
                     android:layout_gravity="center"
@@ -116,7 +116,7 @@
                     android:hint="Masukkan Nama"
                     android:background="@drawable/edit_text_background"
                     android:padding="12dp"
-                    android:fontFamily="@font/Poppins_Medium"
+                    android:fontFamily="@font/poppins_medium"
                     android:textSize="14sp"
                     android:layout_marginBottom="16dp"/>
 
@@ -128,7 +128,7 @@
                     android:hint="Masukkan Gmail"
                     android:background="@drawable/edit_text_background"
                     android:padding="12dp"
-                    android:fontFamily="@font/Poppins_Medium"
+                    android:fontFamily="@font/poppins_medium"
                     android:textSize="14sp"
                     android:layout_marginBottom="16dp"/>
 
@@ -140,7 +140,7 @@
                     android:hint="Masukkan No Hp"
                     android:background="@drawable/edit_text_background"
                     android:padding="12dp"
-                    android:fontFamily="@font/Poppins_Medium"
+                    android:fontFamily="@font/poppins_medium"
                     android:textSize="14sp"
                     android:layout_marginBottom="16dp"/>
 
@@ -152,7 +152,7 @@
                     android:hint="Masukkan Alamat"
                     android:background="@drawable/edit_text_background"
                     android:padding="12dp"
-                    android:fontFamily="@font/Poppins_Medium"
+                    android:fontFamily="@font/poppins_medium"
                     android:textSize="14sp"
                     android:layout_marginBottom="16dp"
                     android:lines="5"
@@ -169,7 +169,7 @@
                     android:hint="Pilih Tanggal Lahir"
                     android:background="@drawable/edit_text_background"
                     android:padding="12dp"
-                    android:fontFamily="@font/Poppins_Medium"
+                    android:fontFamily="@font/poppins_medium"
                     android:textSize="14sp"
                     android:layout_marginBottom="16dp"
                     android:focusable="false"

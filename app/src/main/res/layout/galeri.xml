@@ -62,7 +62,7 @@
                 android:layout_marginStart="12dp"
                 android:layout_marginEnd="12dp"
                 android:fontFamily="@font/poppins_bold"
-                android:marginTop="8dp"
+                android:layout_marginTop="8dp"
                 android:text="Galeri Hewan"
                 android:textColor="#D91656"
                 android:textSize="20sp" />
@@ -75,7 +75,7 @@
                 android:textColor="#D91656"
                 android:textSize="12sp"
                 android:fontFamily="@font/poppins_semibold"
-                android:marginBottom="16dp"
+                android:layout_marginBottom="16dp"
                 android:layout_marginStart="12dp"
                 android:layout_marginEnd="12dp" />
         </LinearLayout>
@@ -128,7 +128,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Mochi, seekor kucing domestik berbulu oranye dengan mata hijau terang. Mochi adalah kucing yang penuh dengan keceriaan dan kehangatan. Dengan bulu yang lembut dan mata yang cerah, Mochi selalu bisa membuat siapa saja merasa nyaman di sekitarnya. Setiap pagi, Mochi akan melompat ke tempat tidur dan duduk di samping pemiliknya, menunggu perhatian dan belaian lembut. Suaranya yang khas, seperti suara dengkuran halus, menjadi musik pagi yang menenangkan. "
-                    android:fontFamily="@font/Poppins_Medium"
+                    android:fontFamily="@font/poppins_medium"
                     android:textColor="#ff5722"
                     android:layout_marginTop="4dp"
                     android:letterSpacing="0.02"

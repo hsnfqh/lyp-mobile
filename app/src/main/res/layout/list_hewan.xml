@@ -67,7 +67,7 @@
                     android:layout_marginStart="12dp"
                     android:layout_marginEnd="12dp"
                     android:fontFamily="@font/poppins_bold"
-                    android:marginTop="8dp"
+                    android:layout_marginTop="8dp"
                     android:text="Hewanku"
                     android:textColor="#D91656"
                     android:textSize="20sp" />
@@ -80,7 +80,7 @@
                     android:textColor="#D91656"
                     android:textSize="12sp"
                     android:fontFamily="@font/poppins_semibold"
-                    android:marginBottom="16dp"
+                    android:layout_marginBottom="16dp"
                     android:layout_marginStart="12dp"
                     android:layout_marginEnd="12dp" />
             </LinearLayout>
@@ -157,7 +157,7 @@
                             android:layout_height="wrap_content"
                             android:text="Jantan"
                             android:textSize="13sp"
-                            android:fontFamily="@font/Poppins_Medium"
+                            android:fontFamily="@font/poppins_medium"
                             android:textColor="#ff5722"
                             android:layout_marginTop="4dp" />
 
@@ -238,7 +238,7 @@
                             android:layout_height="wrap_content"
                             android:text="Jantan"
                             android:textSize="13sp"
-                            android:fontFamily="@font/Poppins_Medium"
+                            android:fontFamily="@font/poppins_medium"
                             android:textColor="#ff5722"
                             android:layout_marginTop="4dp" />
 
@@ -319,7 +319,7 @@
                             android:layout_height="wrap_content"
                             android:text="Jantan"
                             android:textSize="13sp"
-                            android:fontFamily="@font/Poppins_Medium"
+                            android:fontFamily="@font/poppins_medium"
                             android:textColor="#ff5722"
                             android:layout_marginTop="4dp" />
 

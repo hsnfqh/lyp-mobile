@@ -68,7 +68,7 @@
             android:textColor="#D91656"
             android:textSize="12sp"
             android:fontFamily="@font/poppins_semibold"
-            android:Layput_marginBottom="16dp"
+            android:layout_marginBottom="16dp"
             android:layout_marginStart="12dp"
             android:layout_marginEnd="12dp" />
     </LinearLayout>
@@ -157,7 +157,7 @@
                             android:layout_height="wrap_content"
                             android:text="Rp 150,000"
                             android:textSize="13sp"
-                            android:fontFamily="@font/Poppins_Medium"
+                            android:fontFamily="@font/poppins_medium"
                             android:textColor="#ff5722"
                             android:layout_marginTop="4dp"
                             android:layout_marginStart="8dp"/>
@@ -214,7 +214,7 @@
                             android:layout_height="wrap_content"
                             android:text="Rp 150,000"
                             android:textSize="13sp"
-                            android:fontFamily="@font/Poppins_Medium"
+                            android:fontFamily="@font/poppins_medium"
                             android:textColor="#ff5722"
                             android:layout_marginTop="4dp"
                             android:layout_marginStart="8dp"/>
@@ -279,7 +279,7 @@
                             android:layout_height="wrap_content"
                             android:text="Rp 150,000"
                             android:textSize="13sp"
-                            android:fontFamily="@font/Poppins_Medium"
+                            android:fontFamily="@font/poppins_medium"
                             android:textColor="#ff5722"
                             android:layout_marginTop="4dp"
                             android:layout_marginStart="8dp"/>
@@ -336,7 +336,7 @@
                             android:layout_height="wrap_content"
                             android:text="Rp 150,000"
                             android:textSize="13sp"
-                            android:fontFamily="@font/Poppins_Medium"
+                            android:fontFamily="@font/poppins_medium"
                             android:textColor="#ff5722"
                             android:layout_marginTop="4dp"
                             android:layout_marginStart="8dp"/>
@@ -401,7 +401,7 @@
                             android:layout_height="wrap_content"
                             android:text="Rp 150,000"
                             android:textSize="13sp"
-                            android:fontFamily="@font/Poppins_Medium"
+                            android:fontFamily="@font/poppins_medium"
                             android:textColor="#ff5722"
                             android:layout_marginTop="4dp"
                             android:layout_marginStart="8dp"/>
@@ -458,7 +458,7 @@
                             android:layout_height="wrap_content"
                             android:text="Rp 150,000"
                             android:textSize="13sp"
-                            android:fontFamily="@font/Poppins_Medium"
+                            android:fontFamily="@font/poppins_medium"
                             android:textColor="#ff5722"
                             android:layout_marginTop="4dp"
                             android:layout_marginStart="8dp"/>
@@ -523,7 +523,7 @@
                             android:layout_height="wrap_content"
                             android:text="Rp 150,000"
                             android:textSize="13sp"
-                            android:fontFamily="@font/Poppins_Medium"
+                            android:fontFamily="@font/poppins_medium"
                             android:textColor="#ff5722"
                             android:layout_marginTop="4dp"
                             android:layout_marginStart="8dp"/>
@@ -580,7 +580,7 @@
                             android:layout_height="wrap_content"
                             android:text="Rp 150,000"
                             android:textSize="13sp"
-                            android:fontFamily="@font/Poppins_Medium"
+                            android:fontFamily="@font/poppins_medium"
                             android:textColor="#ff5722"
                             android:layout_marginTop="4dp"
                             android:layout_marginStart="8dp"/>
@@ -645,7 +645,7 @@
                             android:layout_height="wrap_content"
                             android:text="Rp 150,000"
                             android:textSize="13sp"
-                            android:fontFamily="@font/Poppins_Medium"
+                            android:fontFamily="@font/poppins_medium"
                             android:textColor="#ff5722"
                             android:layout_marginTop="4dp"
                             android:layout_marginStart="8dp"/>
@@ -702,7 +702,7 @@
                             android:layout_height="wrap_content"
                             android:text="Rp 150,000"
                             android:textSize="13sp"
-                            android:fontFamily="@font/Poppins_Medium"
+                            android:fontFamily="@font/poppins_medium"
                             android:textColor="#ff5722"
                             android:layout_marginTop="4dp"
                             android:layout_marginStart="8dp"/>
@@ -767,7 +767,7 @@
                             android:layout_height="wrap_content"
                             android:text="Rp 150,000"
                             android:textSize="13sp"
-                            android:fontFamily="@font/Poppins_Medium"
+                            android:fontFamily="@font/poppins_medium"
                             android:textColor="#ff5722"
                             android:layout_marginTop="4dp"
                             android:layout_marginStart="8dp"/>
@@ -824,7 +824,7 @@
                             android:layout_height="wrap_content"
                             android:text="Rp 150,000"
                             android:textSize="13sp"
-                            android:fontFamily="@font/Poppins_Medium"
+                            android:fontFamily="@font/poppins_medium"
                             android:textColor="#ff5722"
                             android:layout_marginTop="4dp"
                             android:layout_marginStart="8dp"/>

@@ -62,7 +62,7 @@
                 android:layout_marginStart="12dp"
                 android:layout_marginEnd="12dp"
                 android:fontFamily="@font/poppins_bold"
-                android:marginTop="8dp"
+                android:layout_marginTop="8dp"
                 android:text="Edukasi"
                 android:textColor="#D91656"
                 android:textSize="20sp" />
@@ -75,7 +75,7 @@
                 android:textColor="#D91656"
                 android:textSize="12sp"
                 android:fontFamily="@font/poppins_semibold"
-                android:marginBottom="16dp"
+                android:layout_marginBottom="16dp"
                 android:layout_marginStart="12dp"
                 android:layout_marginEnd="12dp" />
         </LinearLayout>
@@ -129,7 +129,7 @@
 Menjaga kebersihan kucing juga sangat penting; sikat bulu mereka secara rutin dan pastikan kotak pasir selalu dalam keadaan bersih. Lakukan pemeriksaan kesehatan rutin dan vaksinasi untuk mencegah penyakit. Selain itu, berikan stimulasi mental dan fisik dengan bermain dan memberikan aktivitas yang menyenangkan agar kucing tetap aktif dan bahagia.
 
 Kesimpulan: Dengan perhatian yang tepat pada kebutuhan dasar kucing, seperti makanan, kebersihan, dan kesehatan, Anda dapat memastikan mereka tetap sehat dan bahagia."
-                        android:fontFamily="@font/Poppins_Medium"
+                        android:fontFamily="@font/poppins_medium"
                         android:textColor="#ff5722"
                         android:layout_marginTop="10dp"
                         android:letterSpacing="0.02"
