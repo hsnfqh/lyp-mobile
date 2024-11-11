@@ -1,4 +1,5 @@
 <resources>
+    <string name="app_name">LYP Marketplace</string>
     <!-- Animal Types Array -->
     <string-array name="animal_types">
         <item>Kucing</item>
